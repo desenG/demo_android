@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha1/jars/libs/internal_impl-24.0.0-alpha1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e57fba0a2d57d3501d8f4ff44c23092978804845">
+        <dex dex="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0-alpha1-9e4800644055f0b4f48cd284582a459fa6c406e1.jar" />
+    </item>
+    <item
+        jar="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9aaaea3a89040f8176f810c85e288fc74d5d1f12">
+        <dex dex="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/pre-dexed/debug/classes-df460b4056e67805b60a826ea34cd6a365dbaa4d.jar" />
+    </item>
+    <item
+        jar="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a6af5beedc2e8c946abc3771525e2fed77439309">
+        <dex dex="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/pre-dexed/debug/classes-57c83699c834ebba2b8faed81fa50bcd0632d397.jar" />
+    </item>
+    <item
+        jar="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ed88e1f0c8fbf66e1da918545f0a6790f893bceb">
+        <dex dex="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/pre-dexed/debug/classes-1ae042a106a80afdfedc2eb8450c41fdeaf7bec7.jar" />
+    </item>
+    <item
+        jar="/Users/desenguo/Development/adt-bundle-mac-x86_64-20140321/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0-alpha1/support-annotations-24.0.0-alpha1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b8062546971a3d196343232a19a3c0016272ba47">
+        <dex dex="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0-alpha1-192f87d9f8b0f43245a6c892e52281c225f075a4.jar" />
+    </item>
+    <item
+        jar="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9684c95278dc45a142d7de3db9e7e39aa520e1e0">
+        <dex dex="/Users/desenguo/Desktop/djCanadaStudio/android/demo_android/app/build/intermediates/pre-dexed/debug/classes-14889ebfc6d8d4bdd751533afd1f204e3a830e03.jar" />
+    </item>
+
+</items>
