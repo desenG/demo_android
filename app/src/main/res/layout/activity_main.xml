@@ -6,10 +6,39 @@
     <ProgressBar
         style="@android:style/Widget.ProgressBar.Horizontal"
         android:id="@+id/prg_demo"
-        android:layout_centerInParent="true"
         android:layout_width="48dp"
         android:layout_height="400dp"
         android:max="100"
         android:progress="55"
-        android:progressDrawable="@drawable/progress_drawable" />
+        android:progressDrawable="@drawable/progress_drawable"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp" />
+
+    <TextView
+        android:id="@+id/facebooklogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:layout_marginLeft="5dp"
+        android:textColor="#FF4861FA"
+        android:clickable="true"
+        android:layout_marginRight="10dp"
+        android:onClick="loginFacebook"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/facebooklogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGOUT"
+        android:layout_marginLeft="5dp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_orange"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:clickable="true"
+        android:onClick="logoutFacebook"/>
 </RelativeLayout>
