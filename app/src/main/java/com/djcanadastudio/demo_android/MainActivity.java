@@ -9,9 +9,11 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.djcanadastudio.demo_android.activities.tabDemos.TabDemo1Activity;
 import com.djcanadastudio.demo_android.facebook.FacebookHelper;
 import com.djcanadastudio.demo_android.facebook.FacebookUtility;
 import com.djcanadastudio.demo_android.utilities.DoneCallback;
+import com.djcanadastudio.demo_android.utilities.Navigator;
 import com.facebook.AccessToken;
 import com.facebook.FacebookSdk;
 
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressBar prg_demo;
     private int progress;
 
-    private TextView facebookLogin;
+//    private TextView facebookLogin;
     private TextView facebookLogout;
     private FacebookHelper facebookHelper;
     //context
@@ -73,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void linkUI() {
         prg_demo = (ProgressBar) this.findViewById(R.id.prg_demo);
-        facebookLogin = (TextView) findViewById(R.id.facebooklogin);
+//        facebookLogin = (TextView) findViewById(R.id.facebooklogin);
         facebookLogout = (TextView) findViewById(R.id.facebooklogout);
     }
 
@@ -113,17 +115,18 @@ public class MainActivity extends AppCompatActivity {
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
         if(accessToken != null && !accessToken.isExpired()){
             facebookLogout.setVisibility(View.VISIBLE);
-            facebookLogin.setVisibility(View.GONE);
+//            facebookLogin.setVisibility(View.GONE);
         }
         facebookHelper.getFacebookUtility().setOnTokenChangeListener(new FacebookUtility.OnTokenChangeListener() {
             @Override
             public boolean onTokenUpdate(AccessToken oldAccessToken, AccessToken newAccessToken) {
                 if (newAccessToken == null) {
-                    facebookLogin.setVisibility(View.VISIBLE);
+//                    facebookLogin.setVisibility(View.VISIBLE);
                     facebookLogout.setVisibility(View.GONE);
                 } else {
                     facebookLogout.setVisibility(View.VISIBLE);
-                    facebookLogin.setVisibility(View.GONE);
+//                    facebookLogin.setVisibility(View.GONE);
+                    Navigator.navigate(context, TabDemo1Activity.class);
                 }
                 return false;
             }

@@ -1,4 +1,4 @@
-package com.djcanadastudio.demo_android.activities.util;
+package com.djcanadastudio.demo_android.activities.tabDemos.util;
 
 import android.app.Activity;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.djcanadastudio.demo_android.activities.util;
+package com.djcanadastudio.demo_android.activities.tabDemos.util;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

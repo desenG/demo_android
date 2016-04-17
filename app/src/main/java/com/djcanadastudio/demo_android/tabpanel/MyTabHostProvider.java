@@ -6,15 +6,13 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 
 import com.djcanadastudio.demo_android.R;
-import com.djcanadastudio.demo_android.activities.ContactActivity;
-import com.djcanadastudio.demo_android.activities.HomeActivity;
+import com.djcanadastudio.demo_android.activities.tabDemos.TabDemo1Activity;
+import com.djcanadastudio.demo_android.activities.tabDemos.TabDemo2Activity;
 
 public class MyTabHostProvider extends TabHostProvider
 {
-	private Tab homeTab;
-	private Tab contactTab;
-	private Tab shareTab;
-	private Tab moreTab;
+	private Tab demo1Tab;
+	private Tab demo2Tab;
 	
 	private TabView tabView;
 	private GradientDrawable gradientDrawable, transGradientDrawable;
@@ -42,33 +40,33 @@ public class MyTabHostProvider extends TabHostProvider
 	    transGradientDrawable.setCornerRadius(0f);
 	    transGradientDrawable.setDither(true);
 
-		homeTab = new Tab(context, category);
-		homeTab.setIcon(R.drawable.home_sel);
-		homeTab.setIconSelected(R.drawable.home_sel);
-		homeTab.setBtnText("Home");
-		homeTab.setBtnTextColor(Color.WHITE);
-		homeTab.setSelectedBtnTextColor(Color.BLACK);
-//		homeTab.setBtnColor(Color.parseColor("#00000000"));
-//		homeTab.setSelectedBtnColor(Color.parseColor("#0000FF"));
-		homeTab.setBtnGradient(transGradientDrawable);
-		homeTab.setSelectedBtnGradient(gradientDrawable);
-		homeTab.setIntent(new Intent(context, HomeActivity.class));
+		demo1Tab = new Tab(context, category);
+		demo1Tab.setIcon(R.drawable.home_sel);
+		demo1Tab.setIconSelected(R.drawable.home_sel);
+		demo1Tab.setBtnText("Demo1");
+		demo1Tab.setBtnTextColor(Color.WHITE);
+		demo1Tab.setSelectedBtnTextColor(Color.BLACK);
+//		demo1Tab.setBtnColor(Color.parseColor("#00000000"));
+//		demo1Tab.setSelectedBtnColor(Color.parseColor("#0000FF"));
+		demo1Tab.setBtnGradient(transGradientDrawable);
+		demo1Tab.setSelectedBtnGradient(gradientDrawable);
+		demo1Tab.setIntent(new Intent(context, TabDemo1Activity.class));
 
-		contactTab = new Tab(context, category);
-		contactTab.setIcon(R.drawable.menu_sel);
-		contactTab.setIconSelected(R.drawable.menu_sel);
-		contactTab.setBtnText("Contact");
-		contactTab.setBtnTextColor(Color.WHITE);
-		contactTab.setSelectedBtnTextColor(Color.BLACK);
-//		contactTab.setBtnColor(Color.parseColor("#00000000"));
-//		contactTab.setSelectedBtnColor(Color.parseColor("#0000FF"));
-		contactTab.setBtnGradient(transGradientDrawable);
-		contactTab.setSelectedBtnGradient(gradientDrawable);
-		contactTab.setIntent(new Intent(context, ContactActivity.class));
+		demo2Tab = new Tab(context, category);
+		demo2Tab.setIcon(R.drawable.home_sel);
+		demo2Tab.setIconSelected(R.drawable.home_sel);
+		demo2Tab.setBtnText("Demo2");
+		demo2Tab.setBtnTextColor(Color.WHITE);
+		demo2Tab.setSelectedBtnTextColor(Color.BLACK);
+//		demo2Tab.setBtnColor(Color.parseColor("#00000000"));
+//		demo2Tab.setSelectedBtnColor(Color.parseColor("#0000FF"));
+		demo2Tab.setBtnGradient(transGradientDrawable);
+		demo2Tab.setSelectedBtnGradient(gradientDrawable);
+		demo2Tab.setIntent(new Intent(context, TabDemo2Activity.class));
 
 
-		tabView.addTab(homeTab);
-		tabView.addTab(contactTab);
+		tabView.addTab(demo1Tab);
+		tabView.addTab(demo2Tab);
 
 		return tabView;
 	}

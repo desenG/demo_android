@@ -10,4 +10,8 @@
 
     <string name="title_activity_home">Home</string>
     <string name="facebook_app_id">958300420905296</string>
+
+    <string name="title_activity_tab_demo1">TabDemo1Activity</string>
+
+    <string name="title_activity_tab_demo2">TabDemo2Activity</string>
 </resources>
